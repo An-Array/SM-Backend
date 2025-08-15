@@ -22,16 +22,3 @@ def get_db():
       yield db
   finally:
       db.close()
-
-
-# --- CONNECTS TO POSTGRES DB USING PSYCOPG2 (USING RAW SQL INSTEAD OF SQLALCHEMY)
-# while True:
-#    try:
-#       conn = psycopg2.connect(host='localhost', port=5000, database='fastapi', user='postgres', password='root', cursor_factory=RealDictCursor)
-#       cursor = conn.cursor()
-#       print('\nDatabase Connection was Successful !!!\n')
-#       break
-#    except Exception as error:
-#       print('\nDatabase Connection Failed !!!\n')
-#       print('Error:', error)
-#       time.sleep(2)
