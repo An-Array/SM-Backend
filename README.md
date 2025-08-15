@@ -317,6 +317,7 @@ Use the interactive documentation at `/docs` to test endpoints directly from you
 4. Try accessing protected endpoints without tokens
 5. Test data validation with invalid inputs
 
+
 ## 🚀 Deployment
 
 ### Production Considerations
@@ -338,7 +339,7 @@ RUN pip install -r requirements.txt
 COPY . .
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-```
+``` -->
 
 ## 🤝 Contributing
 
