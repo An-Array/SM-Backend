@@ -4,20 +4,20 @@ A modern social media backend API built with FastAPI, PostgreSQL, and SQLAlchemy
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [API Documentation](#api-documentation)
-- [Database Models](#database-models)
-- [Authentication](###🔐Authentication)
-- [Usage Examples](#usage-examples)
-- [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Configuration](#️-configuration)
+- [API Documentation](#-api-documentation)
+- [Database Models](#-database-models)
+- [Authentication](#-authentication)
+- [Usage Examples](#-usage-examples)
+- [Development](#-development)
+- [Contributing](#-contributing)
+- [License](#-license)
 
 ## 🚀 Overview
 
