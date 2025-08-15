@@ -13,17 +13,17 @@ A modern social media backend API built with FastAPI, PostgreSQL, and SQLAlchemy
 - [Configuration](#configuration)
 - [API Documentation](#api-documentation)
 - [Database Models](#database-models)
-- [Authentication](#authentication)
+- [Authentication](###🔐Authentication)
 - [Usage Examples](#usage-examples)
 - [Development](#development)
 - [Contributing](#contributing)
 - [License](#license)
 
-### 🚀 Overview
+## 🚀 Overview
 
 SM-Backend is a RESTful API service designed for social media applications. Built with FastAPI for high performance and automatic API documentation, it provides essential features like user management, post creation, and JWT-based authentication.
 
-### ✨ Features
+## ✨ Features
 
 - **User Management**
   - User registration and authentication
@@ -49,7 +49,7 @@ SM-Backend is a RESTful API service designed for social media applications. Buil
   - SQLAlchemy ORM with PostgreSQL
   - Environment-based configuration
 
-### 🛠 Tech Stack
+## 🛠 Tech Stack
 
 | Component       | Technology |
 |-----------------|------------|
@@ -62,7 +62,7 @@ SM-Backend is a RESTful API service designed for social media applications. Buil
 | Configuration   | pydantic-settings|
 | Python Version  |  3.7+      |
 
-### 📁 Project Structure
+## 📁 Project Structure
 
 ```
 SM-Backend/
@@ -84,7 +84,7 @@ SM-Backend/
 └── README.md               # Project documentation
 ```
 
-### 📋 Prerequisites
+## 📋 Prerequisites
 
 Before running this application, ensure you have:
 
@@ -92,7 +92,7 @@ Before running this application, ensure you have:
 - PostgreSQL database
 - pip (Python package manager)
 
-### 📦 Installation
+## 📦 Installation
 
 1. **Clone the repository**
    ```bash
@@ -130,7 +130,7 @@ Before running this application, ensure you have:
 
 The API will be available at `http://localhost:8000`
 
-### ⚙️ Configuration
+## ⚙️ Configuration
 
 Create a `.env` file in the root directory with the following variables:
 
@@ -156,7 +156,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES=30
   - `ALGORITHM`: Hashing algorithm for JWT (HS256 recommended)
   - `ACCESS_TOKEN_EXPIRE_MINUTES`: Token expiration time in minutes
 
-### 📚 API Documentation
+## 📚 API Documentation
 
 Once the server is running, you can access:
 
@@ -211,7 +211,7 @@ Once the server is running, you can access:
 ```
 
 
-### 🗃 Database Models
+## 🗃 Database Models
 
 ### User Model
 ```python
@@ -234,7 +234,7 @@ class Post(Base):
     created_by: User (Relationship)
 ```
 
-### 🔐 Authentication
+## 🔐 Authentication
 
 This API uses JWT (JSON Web Tokens) for authentication following the OAuth2 password bearer flow.
 
@@ -253,7 +253,7 @@ This API uses JWT (JSON Web Tokens) for authentication following the OAuth2 pass
 - **Expiration**: Configurable via `ACCESS_TOKEN_EXPIRE_MINUTES`
 - **Algorithm**: HS256 (configurable)
 
-### 💻 Usage Examples
+## 💻 Usage Examples
 
 ### Register a New User
 ```bash
@@ -289,7 +289,7 @@ curl -X POST "http://localhost:8000/posts" \
 curl -X GET "http://localhost:8000/posts"
 ```
 
-### 🔧 Development
+## 🔧 Development
 
 ### Running in Development Mode
 ```bash
@@ -316,7 +316,6 @@ Use the interactive documentation at `/docs` to test endpoints directly from you
 3. Create posts with authentication
 4. Try accessing protected endpoints without tokens
 5. Test data validation with invalid inputs
-
 <!-- 
 ## 🚀 Deployment
 
@@ -341,7 +340,7 @@ COPY . .
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 ``` -->
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
