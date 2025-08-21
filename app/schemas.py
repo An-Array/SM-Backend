@@ -1,6 +1,7 @@
-from pydantic import BaseModel, EmailStr, ConfigDict
+from pydantic import BaseModel, EmailStr, ConfigDict, conint
+from pydantic.types import conint
 from datetime import datetime
-from typing import Optional
+from typing import Literal, Optional
 
 class PostBase(BaseModel):
   title: str
@@ -24,6 +25,12 @@ class ResponsePost(PostBase):
 
   model_config = ConfigDict(from_attributes=True)
 
+class PostOut(BaseModel):
+  Post: ResponsePost
+  votes: int
+
+  model_config = ConfigDict(from_attributes=True)
+
 
 class UserCreate(BaseModel):
   email: EmailStr
@@ -39,3 +46,7 @@ class Token(BaseModel):
 
 class TokenData(BaseModel):
   id: Optional[int] = None
+
+class Vote(BaseModel):
+  post_id: int
+  dir: Literal[0,1]
